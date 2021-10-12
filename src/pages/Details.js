@@ -6,7 +6,7 @@ const Details = (props) => {
   const {
     region: {
       name,
-      today_open_cases,
+      today_open_cases: openCases,
     },
   } = props;
 
@@ -15,13 +15,13 @@ const Details = (props) => {
       <h1>{`This is the details page for ${name}`}</h1>
       <p>{msg}</p>
       <p>Today open Cases: </p>
-      <span>{today_open_cases}</span>
+      <span>{openCases}</span>
     </>
   );
 };
 
 Details.propTypes = {
   region: PropTypes.instanceOf(Object).isRequired,
-}
+};
 
 export default Details;
