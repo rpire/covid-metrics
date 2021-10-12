@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-  
   const data = useSelector((state) => state.data);
 
   return (
