@@ -8,7 +8,7 @@ const DetailsNavbar = (props) => {
   const { name } = props;
 
   return (
-    <nav>
+    <nav className="flex-box">
       <Link to="/">
         <MdOutlineKeyboardArrowLeft />
       </Link>
