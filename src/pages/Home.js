@@ -13,7 +13,7 @@ const Home = () => {
 
   const filteredRegions = data.regions.sort((a, b) => b.today_open_cases - a.today_open_cases)
     .filter((region) => region.name.toLowerCase()
-    .includes(search.toLowerCase()));
+      .includes(search.toLowerCase()));
 
   return (
     <>

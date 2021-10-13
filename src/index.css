@@ -25,6 +25,10 @@ nav {
   align-items: center;
 }
 
+label {
+  align-items: center;
+}
+
 input {
   background-color: #32558c;
   color: #fff;
@@ -91,17 +95,17 @@ h2 {
   height: 47.5vw;
 }
 
-.dark-region:hover,
-.light-region:hover {
-  background-color: #5582e1;
-}
-
 .dark-region {
   background-color: #3c64a5;
 }
 
 .light-region {
   background-color: #4169af;
+}
+
+.dark-region:hover,
+.light-region:hover {
+  background-color: #5582e1;
 }
 
 .region-img-frame {
