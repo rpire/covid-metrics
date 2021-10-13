@@ -5,7 +5,7 @@ const HomeNavbar = () => (
   <nav>
     <span>UK</span>
     <span>most cases</span>
-    <button>
+    <button typeo="button">
       <CgMenuGridR />
     </button>
   </nav>

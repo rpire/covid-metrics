@@ -12,15 +12,14 @@ const Details = (props) => {
     },
   } = props;
 
-  console.log(name);
-
   return (
     <>
       <DetailsNavbar name={name} />
       <h1>{`This is the details page for ${name}`}</h1>
       <p>{msg}</p>
       <p>Today open Cases: </p>
-      <span>{openCases}</span><br />
+      <span>{openCases}</span>
+      <br />
       <img src={`./media/${id}.png`} alt={`Silhoutte of ${name}`} />
     </>
   );

@@ -15,7 +15,7 @@ const DetailsNavbar = (props) => {
       <span>
         {`${name} metrics`}
       </span>
-      <button>
+      <button type="button">
         <CgMenuGridR />
       </button>
     </nav>
