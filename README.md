@@ -35,7 +35,6 @@ To get a local copy up and running follow these simple example steps.
 - Run `npm install` on the terminal to install the project dependencies.
 - Run `npm run start` to see the web app running in your browser.
 
-
 ## Authors
 
 👤 **Rubén D. Pire L.**
@@ -43,7 +42,6 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@rpire](https://github.com/rpire)
 - Twitter: [@RubenPire7](https://twitter.com/RubenPire7)
 - LinkedIn: [Rubén Darío Pire López](https://www.linkedin.com/in/ruben-d-pire/)
-
 
 ## 🤝 Contributing
 

@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import Home from '../pages/Home';
-import Details from '../pages/Details';
-import Error from '../pages/Error';
-import { getData } from '../redux/data/data';
+import Home from './pages/Home';
+import Details from './pages/Details';
+import Error from './pages/Error';
+import { getData } from './redux/data/data';
 
 const App = () => {
   const dispatch = useDispatch();
