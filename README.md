@@ -20,7 +20,7 @@ Covid-19 Metrics is an API based web app that fetches information about covid-19
 
 ## Loom Video
 
-[Loom Video Link](https://www.loom.com/share/24ee684b00754f969a820aab74e5ae87)
+[Loom Video Link](https://www.loom.com/share/7b3c1779d72a4ec5ac60c28778f2064e)
 
 ## Getting Started
 
