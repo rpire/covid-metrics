@@ -21,7 +21,7 @@ const Home = () => {
         search={search}
         handleChange={handleChange}
       />
-      <div className="main-container flex-box">
+      <section className="main-container flex-box">
         <img
           src={`./media/${data.id}.png`}
           alt={`Map silhouette for ${data.name}`}
@@ -32,20 +32,22 @@ const Home = () => {
           <p>Confirmed cases</p>
           <span>{data.today_confirmed}</span>
         </div>
-      </div>
-      <h2>STATS BY REGION</h2>
-      <ul className="region-list">
-        {filteredRegions.map((region) => (
-          <li key={region.id}>
-            <Link to={`/${region.id}`}>
-              <Region
-                region={region}
-                id={filteredRegions.indexOf(region)}
-              />
-            </Link>
-          </li>
-        ))}
-      </ul>
+      </section>
+      <section>
+        <h2>STATS BY REGION</h2>
+        <ul className="region-list">
+          {filteredRegions.map((region) => (
+            <li key={region.id}>
+              <Link to={`/${region.id}`}>
+                <Region
+                  region={region}
+                  id={filteredRegions.indexOf(region)}
+                />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
     </>
   );
 };
