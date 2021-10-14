@@ -51,6 +51,8 @@ const initialState = {
       id: 'wales',
     },
   ],
+  name: 'United Kingdom',
+  id: 'united_kingdom',
 };
 
 const dataReducer = (state = initialState, action) => {
