@@ -17,12 +17,12 @@ body {
 nav {
   justify-content: space-between;
   align-items: center;
-  height: 50px;
-  padding: 0 2.5%;
+  height: 60px;
 }
 
 .input-container {
   align-items: center;
+  margin-right: 2.5%;
 }
 
 label {
@@ -32,9 +32,9 @@ label {
 input {
   background-color: #32558c;
   color: #fff;
-  width: 95px;
-  height: 30px;
-  padding: 0 3px;
+  width: 100px;
+  height: 40px;
+  padding-left: 5px;
   border: none;
   border-radius: 5px;
   margin-right: 5px;
@@ -47,6 +47,7 @@ input::placeholder {
 .nav-title {
   font-size: 20px;
   font-weight: 600;
+  margin-left: 2.5%;
 }
 
 .nav-center,
@@ -55,16 +56,19 @@ input::placeholder {
 }
 
 .main-container {
+  justify-content: center;
   background-color: #5582e1;
   width: 100%;
-  min-height: 300px;
-  padding: 5px;
+  min-height: 330px;
+  padding: 5px 0;
 }
 
 .main-img {
   align-self: center;
   width: 50%;
+  max-width: 400px;
   height: 50%;
+  max-height: 400px;
 }
 
 .main-content {
@@ -80,7 +84,7 @@ input::placeholder {
 h2 {
   font-family: "Lato", sans-serif;
   font-size: 18px;
-  width: 100%;
+  width: 97.5%;
   background-color: #32558c;
   padding: 5px 0 4px 2.5%;
 }
@@ -166,4 +170,30 @@ h2 {
 .counter {
   align-items: center;
   gap: 10px;
+}
+
+@media only screen and (min-width: 769px) {
+  input {
+    width: 300px;
+    padding-left: 20px;
+  }
+
+  .main-container {
+    padding: 30px 0;
+  }
+  
+  .region-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .dark-region,
+  .light-region {
+    background-color: transparent;
+    height: 30vw;
+    max-height: 300px;
+  }
+
+  .region-list li:nth-child(odd) {
+    background-color: #3c64a5;
+  }
 }

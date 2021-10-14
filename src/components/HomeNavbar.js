@@ -20,7 +20,7 @@ const HomeNavbar = (props) => {
             name="search"
             value={search}
             onChange={handleChange}
-            placeholder="Search country"
+            placeholder="Search region"
           />
           <GoSearch />
         </label>
