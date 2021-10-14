@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { MdOutlineKeyboardArrowLeft } from 'react-icons/md';
-import { CgMenuGridR } from 'react-icons/cg';
 
 const DetailsNavbar = (props) => {
   const { name } = props;
@@ -10,14 +9,11 @@ const DetailsNavbar = (props) => {
   return (
     <nav className="flex-box">
       <Link to="/">
-        <MdOutlineKeyboardArrowLeft />
+        <MdOutlineKeyboardArrowLeft className="nav-return" />
       </Link>
-      <span>
+      <span className="nav-end">
         {`${name} metrics`}
       </span>
-      <button type="button">
-        <CgMenuGridR />
-      </button>
     </nav>
   );
 };
