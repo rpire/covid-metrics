@@ -9,7 +9,7 @@ test('Renders Correctly', () => {
   render(
     <Router basename={process.env.PUBLIC_URL}>
       <DetailsNavbar name={props} />
-    </Router> 
+    </Router>,
   );
   expect(screen).toMatchSnapshot();
 });

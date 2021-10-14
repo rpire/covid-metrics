@@ -7,7 +7,7 @@ test('Renders Correctly', () => {
     region: {
       name: 'test',
       today_confirmed: 0,
-      id: 'test id'
+      id: 'test id',
     },
     id: 5,
   };
@@ -16,7 +16,7 @@ test('Renders Correctly', () => {
     <Region
       region={region}
       id={id}
-    />
+    />,
   );
   expect(screen).toMatchSnapshot();
 });

@@ -1,4 +1,4 @@
-import { loadData } from "../redux/data/data";
+import { loadData } from '../redux/data/data';
 
 describe('Test for loadData function', () => {
   const data1 = {
