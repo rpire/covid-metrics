@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import DetailsNavbar from '../components/DetailsNavbar';
 import { IoPersonSharp } from 'react-icons/io5';
+import DetailsNavbar from '../components/DetailsNavbar';
 
 const Details = (props) => {
   const {
