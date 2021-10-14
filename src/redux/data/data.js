@@ -4,7 +4,7 @@ const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 const currentMonth = currentDate.getMonth() + 1;
 const currentDay = currentDate.getDate() - 1;
-export const workingDate = `${currentYear}-${currentMonth}-${currentDay}`;
+const workingDate = `${currentYear}-${currentMonth}-${currentDay}`;
 
 const url = `https://api.covid19tracking.narrativa.com/api/${workingDate}/country/united_kingdom`;
 
