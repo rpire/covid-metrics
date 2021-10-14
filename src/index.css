@@ -49,17 +49,20 @@ input::placeholder {
   font-weight: 600;
 }
 
-.nav-center {
+.nav-center,
+.nav-end {
   font-family: "Lato", sans-serif;
-  justify-self: center;
 }
 
 .main-container {
   background-color: #5582e1;
+  width: 100%;
+  min-height: 300px;
   padding: 5px;
 }
 
 .main-img {
+  align-self: center;
   width: 50%;
   height: 50%;
 }
@@ -67,6 +70,7 @@ input::placeholder {
 .main-content {
   flex-direction: column;
   justify-content: center;
+  padding-left: 5%;
 }
 
 .main-content p {
@@ -78,6 +82,7 @@ h2 {
   font-size: 18px;
   width: 100%;
   background-color: #32558c;
+  padding: 5px 0 4px 2.5%;
 }
 
 .region-list {
@@ -132,4 +137,33 @@ h2 {
   color: #fff;
   padding-top: 2.5vw;
   margin-right: 5%;
+}
+
+.nav-return {
+  font-size: 40px;
+  color: #fff;
+}
+
+.nav-end {
+  margin-right: 30%;
+}
+
+.details-list-item {
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  padding: 20px 2.5%;
+}
+
+.even {
+  background-color: #3c64a5;
+}
+
+.odd {
+  background-color: #4169af;
+}
+
+.counter {
+  align-items: center;
+  gap: 10px;
 }

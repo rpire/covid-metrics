@@ -29,8 +29,8 @@ const Home = () => {
         />
         <div className="main-content flex-box">
           <h1>{data.name}</h1>
-          <p>Open cases today</p>
-          <span>{data.today_open_cases}</span>
+          <p>Confirmed cases</p>
+          <span>{data.today_confirmed}</span>
         </div>
       </div>
       <h2>STATS BY REGION</h2>

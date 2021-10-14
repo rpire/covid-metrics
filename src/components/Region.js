@@ -6,7 +6,7 @@ const Region = (props) => {
   const {
     region: {
       name,
-      today_open_cases: openCases,
+      today_confirmed: confirmedCases,
       id: regionID,
     },
     id,
@@ -26,8 +26,8 @@ const Region = (props) => {
       </div>
       <div className="region-content flex-box">
         <h3>{name}</h3>
-        <p>Open cases</p>
-        <span>{openCases}</span>
+        <p>Confirmed cases</p>
+        <span>{confirmedCases}</span>
       </div>
     </div>
   );
