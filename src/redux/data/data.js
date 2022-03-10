@@ -1,13 +1,21 @@
 const LOAD_DATA = 'App/data/LOAD_DATA';
 
-const currentDate = new Date();
-currentDate.setDate(currentDate.getDate() - 1);
-const currentYear = currentDate.getFullYear();
-const currentMonth = currentDate.getMonth() + 1;
-const currentDay = currentDate.getDate();
-const workingDate = `${currentYear}-${currentMonth}-${currentDay}`;
+const formatNum = (num) => num.toString().padStart(2, '0');
 
-const url = `https://api.covid19tracking.narrativa.com/api/${workingDate}/country/united_kingdom`;
+const formatDate = (date) => {
+  const formattedDate = [
+    date.getFullYear().toString(),
+    formatNum(date.getMonth() + 1).toString(),
+    formatNum(date.getDate() - 1).toString(),
+  ];
+
+  return formattedDate.join('-');
+};
+
+const DATE = new Date();
+const YESTERDAY = formatDate(DATE);
+
+const url = `https://api.covid19tracking.narrativa.com/api/${YESTERDAY}/country/united_kingdom`;
 
 const initialState = {
   regions: [
@@ -72,8 +80,9 @@ export const loadData = (payload) => ({
 
 export const getData = () => async (dispatch) => {
   const fetchedData = await fetch(url)
-    .then((response) => response.json());
-  dispatch(loadData(fetchedData.dates[workingDate].countries['United Kingdom']));
+    .then((response) => response.json())
+    .catch(() => initialState);
+  dispatch(loadData(fetchedData.dates[YESTERDAY].countries['United Kingdom']));
 };
 
 export default dataReducer;
