@@ -18,7 +18,7 @@ const Region = (props) => {
     <div className={darkElements.includes(id) ? 'dark-region' : 'light-region'}>
       <div className="region-img-frame flex-box">
         <img
-          src={`./media/${regionID}.png`}
+          src={process.env.PUBLIC_URL + `/media/${regionID}.png`}
           alt="Region map"
           className="region-img"
         />
