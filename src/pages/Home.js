@@ -23,7 +23,7 @@ const Home = () => {
       />
       <section className="main-container flex-box">
         <img
-          src={`./media/${data.id}.png`}
+          src={process.env.PUBLIC_URL.concat(`/media/${data.id}.png`)}
           alt={`Map silhouette for ${data.name}`}
           className="main-img"
         />
