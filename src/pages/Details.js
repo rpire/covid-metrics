@@ -22,7 +22,7 @@ const Details = (props) => {
   return (
     <>
       <DetailsNavbar name={name} />
-      <div className="main-container flex-box">
+      <section className="main-container flex-box">
         <img
           src={`./media/${id}.png`}
           alt={`Map silhouette for ${name}`}
@@ -33,66 +33,68 @@ const Details = (props) => {
           <p>Confirmed cases</p>
           <span>{confirmed}</span>
         </div>
-      </div>
-      <h2>DETAILS</h2>
-      <ul className="details-list">
-        <li className="details-list-item flex-box even">
-          <span>CONFIRMED CASES</span>
-          <span className="counter flex-box">
-            {confirmed}
-            <IoPersonSharp />
-          </span>
-        </li>
-        <li className="details-list-item flex-box odd">
-          <span>NEW CONFIRMED CASES</span>
-          <span className="counter flex-box">
-            {newConfirmed}
-            <IoPersonSharp />
-          </span>
-        </li>
-        <li className="details-list-item flex-box even">
-          <span>DEATHS</span>
-          <span className="counter flex-box">
-            {deaths}
-            <IoPersonSharp />
-          </span>
-        </li>
-        <li className="details-list-item flex-box odd">
-          <span>NEW DEATHS</span>
-          <span className="counter flex-box">
-            {newDeaths}
-            <IoPersonSharp />
-          </span>
-        </li>
-        <li className="details-list-item flex-box even">
-          <span>OPEN CASES</span>
-          <span className="counter flex-box">
-            {open}
-            <IoPersonSharp />
-          </span>
-        </li>
-        <li className="details-list-item flex-box odd">
-          <span>NEW OPEN CASES</span>
-          <span className="counter flex-box">
-            {newOpen}
-            <IoPersonSharp />
-          </span>
-        </li>
-        <li className="details-list-item flex-box even">
-          <span>RECOVERED</span>
-          <span className="counter flex-box">
-            {recovered}
-            <IoPersonSharp />
-          </span>
-        </li>
-        <li className="details-list-item flex-box odd">
-          <span>NEW RECOVERED</span>
-          <span className="counter flex-box">
-            {newRecovered}
-            <IoPersonSharp />
-          </span>
-        </li>
-      </ul>
+      </section>
+      <section>
+        <h2>DETAILS</h2>
+        <ul className="details-list">
+          <li className="details-list-item flex-box even">
+            <span>CONFIRMED CASES</span>
+            <span className="counter flex-box">
+              {confirmed}
+              <IoPersonSharp />
+            </span>
+          </li>
+          <li className="details-list-item flex-box odd">
+            <span>NEW CONFIRMED CASES</span>
+            <span className="counter flex-box">
+              {newConfirmed}
+              <IoPersonSharp />
+            </span>
+          </li>
+          <li className="details-list-item flex-box even">
+            <span>DEATHS</span>
+            <span className="counter flex-box">
+              {deaths}
+              <IoPersonSharp />
+            </span>
+          </li>
+          <li className="details-list-item flex-box odd">
+            <span>NEW DEATHS</span>
+            <span className="counter flex-box">
+              {newDeaths}
+              <IoPersonSharp />
+            </span>
+          </li>
+          <li className="details-list-item flex-box even">
+            <span>OPEN CASES</span>
+            <span className="counter flex-box">
+              {open}
+              <IoPersonSharp />
+            </span>
+          </li>
+          <li className="details-list-item flex-box odd">
+            <span>NEW OPEN CASES</span>
+            <span className="counter flex-box">
+              {newOpen}
+              <IoPersonSharp />
+            </span>
+          </li>
+          <li className="details-list-item flex-box even">
+            <span>RECOVERED</span>
+            <span className="counter flex-box">
+              {recovered}
+              <IoPersonSharp />
+            </span>
+          </li>
+          <li className="details-list-item flex-box odd">
+            <span>NEW RECOVERED</span>
+            <span className="counter flex-box">
+              {newRecovered}
+              <IoPersonSharp />
+            </span>
+          </li>
+        </ul>
+      </section>
     </>
   );
 };
